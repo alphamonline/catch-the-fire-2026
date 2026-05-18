@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catch The Fire 2026 — Heavenly Realities</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Raleway:wght@300;400;500;600;700;800&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+<!-- Main CSS File -->
+<link href="assets/css/main.css" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="#">
+    <span class="nav-brand-main">Catch The Fire 2026</span>
+    <span class="nav-brand-sub">Heartfelt International Ministries</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#theme">Theme</a></li>
+    <li><a href="#message">The Call</a></li>
+    <!-- <li><a href="#schedule">Programme</a></li> -->
+    <li><a href="#venue">Venue</a></li>
+  </ul>
+  <a class="nav-reg" href="#register">Registration Coming Soon</a>
+</nav>
+
+<section id="hero">
+  <div class="hero-ov"></div>
+  <div class="hero-grid-bg"></div>
+
+  <!-- Fire canvas at bottom of hero -->
+  <canvas id="fire-canvas"></canvas>
+
+  <!-- Floating ember particles -->
+  <div class="embers-wrap" id="embers-wrap"></div>
+
+  <div class="hero-content">
+    <span class="hero-tagline">Heartfelt International Ministries</span>
+    <h1 class="hero-title">
+      <em>Catch The Fire</em>
+      2026
+    </h1>
+     <h1 class="hero-title">
+      <em>Heavenly Realities</em>
+    </h1>
+    <span class="hero-year">Richland City</span>
+    <div class="cd-wrap">
+      <div class="cd-unit"><span class="cd-num" id="cd-d">--</span><span class="cd-label">Days</span></div>
+      <div class="cd-unit"><span class="cd-num" id="cd-h">--</span><span class="cd-label">Hours</span></div>
+      <div class="cd-unit"><span class="cd-num" id="cd-m">--</span><span class="cd-label">Mins</span></div>
+      <div class="cd-unit"><span class="cd-num" id="cd-s">--</span><span class="cd-label">Secs</span></div>
+    </div>
+    <div class="hero-ctas">
+      <!-- Primary CTA now leads to the Coming Soon section instead -->
+      <a class="btn-primary" href="#register">Registration Opening Soon</a>
+    </div>
+  </div>
+</section>
+
+<div class="div-bar" id="theme">
+  <div class="div-scroll">
+    <div class="div-item"><span class="div-dot"></span>24–30 August 2026</div>
+    <div class="div-item"><span class="div-dot"></span>Richland City · Mhondoro</div>
+    <div class="div-item"><span class="div-dot"></span>Theme: Heavenly Realities</div>
+    <div class="div-item"><span class="div-dot"></span>Heartfelt International Ministries</div>
+    <div class="div-item"><span class="div-dot"></span>Apostle T. & Pastor C. Vutabwashe</div>
+    <div class="div-item"><span class="div-dot"></span>Catch The Fire 2026</div>
+    <div class="div-item"><span class="div-dot"></span>24–30 August 2026</div>
+    <div class="div-item"><span class="div-dot"></span>Richland City · Mhondoro</div>
+    <div class="div-item"><span class="div-dot"></span>Theme: Heavenly Realities</div>
+    <div class="div-item"><span class="div-dot"></span>Heartfelt International Ministries</div>
+    <div class="div-item"><span class="div-dot"></span>Apostle T. & Pastor C. Vutabwashe</div>
+    <div class="div-item"><span class="div-dot"></span>Catch The Fire 2026</div>
+  </div>
+</div>
+
+<!-- ===================== CONFERENCE POSTER SECTION ===================== -->
+<section id="poster-section">
+  <div class="poster-inner">
+    <div class="poster-image-wrap reveal">
+      <div class="poster-glow"></div>
+      <div class="poster-frame">
+        <!-- REPLACE src below with your actual image path if hosting locally -->
+        <img src="assets/img/poster.jpeg" alt="Catch The Fire 2026 — Heavenly Realities Conference Poster" />
+        <div class="poster-corner tl"></div>
+        <div class="poster-corner tr"></div>
+        <div class="poster-corner bl"></div>
+        <div class="poster-corner br"></div>
+      </div>
+    </div>
+    <div class="poster-text reveal">
+      <div class="poster-eyebrow">Conference Theme</div>
+      <div class="theme-display">
+        <span class="theme-big">Heavenly</span>
+        <span class="theme-big accent">Realities</span>
+      </div>
+      <p class="poster-body">
+        The atmosphere is shifting. Heaven is leaning in. Apostle T. and Pastor C. Vutabwashe invite you to seven days of fire, revelation, and divine encounter at Richland City, Mhondoro.
+      </p>
+      <ul class="poster-details-list">
+        <li>
+          <span class="pd-icon">📅</span>
+          <div><span class="pd-label">Dates</span><span class="pd-val">24 – 30 August 2026</span></div>
+        </li>
+        <li>
+          <span class="pd-icon">📍</span>
+          <div><span class="pd-label">Venue</span><span class="pd-val">Richland City, Mhondoro, Zimbabwe</span></div>
+        </li>
+        <li>
+          <span class="pd-icon">🔥</span>
+          <div><span class="pd-label">Theme</span><span class="pd-val">Heavenly Realities</span></div>
+        </li>
+        <li>
+          <span class="pd-icon">🏛️</span>
+          <div><span class="pd-label">Hosted By</span><span class="pd-val">Heartfelt International Ministries</span></div>
+        </li>
+      </ul>
+      <!-- <div class="poster-cta-row">
+        <a class="btn-gold" href="#register">Register Now</a>
+        <a class="btn-outline" href="#schedule">View Programme</a>
+      </div> -->
+    </div>
+  </div>
+</section>
+
+<!-- MESSAGE – light -->
+<section class="s-light" id="message">
+  <div class="sw">
+    <div class="msg-grid reveal">
+      <div>
+        <div class="kicker">A Prophetic Proclamation</div>
+        <h2 class="sec-title">A Word for This Season</h2>
+        <div class="rule"></div>
+        <p style="margin-top:1.5rem; font-size:0.88rem; color:var(--text-muted); font-style:italic; line-height:1.7;">
+          "The fire of God is calling a generation deeper."
+        </p>
+      </div>
+      <div class="msg-text">
+        <p><strong>Less than 100 days to go</strong> until Catch The Fire Conference 2026. I sense a strong stirring in my spirit concerning this gathering. Heaven is preparing to reveal realities that many have only spoken about, but are now about to encounter.</p>
+        <p>This will not be an ordinary conference season. <strong>Men will be awakened.</strong> Hunger will return. Lives will be aligned again with divine purpose and eternal patterns.</p>
+        <p>I invite you to prepare yourself prayerfully for <strong>24–30 August</strong> at Richland City, Mhondoro. The fire of God is calling a generation deeper.</p>
+        <div class="msg-sig">
+          <div class="sig-bar"></div>
+          <div class="sig-name">Apostle T. Vutabwashe</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCHEDULE – off-white -->
+<section class="s-off" id="schedule">
+  <div class="sw">
+    <div class="kicker">Programme</div>
+    <h2 class="sec-title">Seven Days of Fire</h2>
+    <div class="rule"></div>
+    <p style="color:var(--text-mid); max-width:500px; font-size:0.95rem; line-height:1.7; margin-bottom:0.5rem;">From Monday 24 to Sunday 30 August — each day an invitation to go deeper into God's presence.</p>
+    <div class="sched-tabs" id="tabs">
+      <div class="sd on" data-i="0"><span class="sd-n">24</span><span class="sd-d">Mon</span></div>
+      <div class="sd" data-i="1"><span class="sd-n">25</span><span class="sd-d">Tue</span></div>
+      <div class="sd" data-i="2"><span class="sd-n">26</span><span class="sd-d">Wed</span></div>
+      <div class="sd" data-i="3"><span class="sd-n">27</span><span class="sd-d">Thu</span></div>
+      <div class="sd" data-i="4"><span class="sd-n">28</span><span class="sd-d">Fri</span></div>
+      <div class="sd" data-i="5"><span class="sd-n">29</span><span class="sd-d">Sat</span></div>
+      <div class="sd" data-i="6"><span class="sd-n">30</span><span class="sd-d">Sun</span></div>
+    </div>
+    <!-- <div id="panels">
+      <div class="sched-panel on" data-p="0">
+        <div class="sess"><div class="sess-time">Evening</div><div class="sess-info"><div class="sess-title">Opening Night — Ignition</div><div class="sess-desc">Welcome, worship, and the inaugural fire session with Apostle Vutabwashe.</div></div><div class="sess-tag">Opening</div></div>
+      </div>
+      <div class="sched-panel" data-p="1">
+        <div class="sess"><div class="sess-time">Morning</div><div class="sess-info"><div class="sess-title">Morning Session</div><div class="sess-desc">Prayer, worship, and teaching on Heavenly Realities.</div></div><div class="sess-tag">Teaching</div></div>
+        <div class="sess"><div class="sess-time">Evening</div><div class="sess-info"><div class="sess-title">Evening Fire Session</div><div class="sess-desc">Corporate worship and impartation.</div></div><div class="sess-tag">Worship</div></div>
+      </div>
+      <div class="sched-panel" data-p="2">
+        <div class="sess"><div class="sess-time">Morning</div><div class="sess-info"><div class="sess-title">Morning Prayer &amp; Teaching</div><div class="sess-desc">Deep teaching on divine alignment and eternal purpose.</div></div><div class="sess-tag">Teaching</div></div>
+        <div class="sess"><div class="sess-time">Evening</div><div class="sess-info"><div class="sess-title">Midweek Fire</div><div class="sess-desc">High praise and worship encounter.</div></div><div class="sess-tag">Worship</div></div>
+      </div>
+      <div class="sched-panel" data-p="3">
+        <div class="sess"><div class="sess-time">Morning</div><div class="sess-info"><div class="sess-title">Prophetic Morning</div><div class="sess-desc">Prophetic sessions and personal ministry.</div></div><div class="sess-tag">Prophetic</div></div>
+        <div class="sess"><div class="sess-time">Evening</div><div class="sess-info"><div class="sess-title">Prophetic Night</div><div class="sess-desc">Prophetic declarations and ministry over the congregation.</div></div><div class="sess-tag">Prophetic</div></div>
+      </div>
+      <div class="sched-panel" data-p="4">
+        <div class="sess"><div class="sess-time">Morning</div><div class="sess-info"><div class="sess-title">Healing &amp; Impartation</div><div class="sess-desc">Prayer for healing, breakthrough, and the laying on of hands.</div></div><div class="sess-tag">Healing</div></div>
+        <div class="sess"><div class="sess-time">Evening</div><div class="sess-info"><div class="sess-title">Friday Fire</div><div class="sess-desc">Faith-filled worship and powerful ministry.</div></div><div class="sess-tag">Worship</div></div>
+      </div>
+      <div class="sched-panel" data-p="5">
+        <div class="sess"><div class="sess-time">Morning</div><div class="sess-info"><div class="sess-title">Youth Morning Power</div><div class="sess-desc">Dedicated sessions for the younger generation.</div></div><div class="sess-tag">Youth</div></div>
+        <div class="sess"><div class="sess-time">Evening</div><div class="sess-info"><div class="sess-title">Youth Fire Night</div><div class="sess-desc">A powerful night for the youth — worship, fire, and encounter.</div></div><div class="sess-tag">Youth</div></div>
+      </div>
+      <div class="sched-panel" data-p="6">
+        <div class="sess"><div class="sess-time">Morning</div><div class="sess-info"><div class="sess-title">Closing Morning Service</div><div class="sess-desc">Final teaching and communion together.</div></div><div class="sess-tag">Closing</div></div>
+        <div class="sess"><div class="sess-time">Afternoon</div><div class="sess-info"><div class="sess-title">Commissioning &amp; Closing Fire</div><div class="sess-desc">Final impartation, commissioning prayer, and the closing celebration of fire.</div></div><div class="sess-tag">Commissioning</div></div>
+      </div>
+    </div> -->
+    <p style="font-size:0.82rem; color:var(--text-muted); font-style:italic; text-align:center; margin-top:1.5rem;">Full programme to be announced soon.</p>
+  </div>
+</section>
+
+<!-- VENUE – light -->
+<section class="s-light" id="venue">
+  <div class="sw">
+    <div class="venue-grid reveal">
+      <div>
+        <div class="kicker">Location</div>
+        <h2 class="sec-title">Richland City, Mhondoro</h2>
+        <div class="rule"></div>
+        <p style="color:var(--text-mid); line-height:1.8; font-size:0.97rem; margin-bottom:1rem;">Mhondoro — a place being written into prophetic history. Come expecting God to move as you gather with thousands who are hungry for heavenly realities.</p>
+        <ul class="vi-list">
+          <li><span class="vi-ico">📍</span><div><span class="vi-k">Venue</span><span class="vi-v">Richland City, Mhondoro, Zimbabwe</span></div></li>
+          <li><span class="vi-ico">🚌</span><div><span class="vi-k">Transport</span><span class="vi-v">Arrangements from major cities — details to be announced</span></div></li>
+          <li><span class="vi-ico">🏕️</span><div><span class="vi-k">Accommodation</span><span class="vi-v">On-site accommodation available for all attendees</span></div></li>
+          <li><span class="vi-ico">📞</span><div><span class="vi-k">Enquiries</span><span class="vi-v">Contact Heartfelt International Ministries for all conference enquiries</span></div></li>
+        </ul>
+      </div>
+        <div class="venue-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3798.32!2d30.8258728!3d-18.5552512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1933c52f6a440211%3A0x83f27c504158d6ca!2sMount%20Zion%2C%20Richland%20City!5e0!3m2!1sen!2szw!4v1716000000000"
+            width="100%"
+            height="100%"
+            style="border:0; position:absolute; inset:0; width:100%; height:100%;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span class="ft-logo">Catch The Fire 2026</span>
+  <span class="ft-min">Heartfelt International Ministries · Mhondoro, Zimbabwe</span>
+  <div class="ft-rule"></div>
+  <p class="ft-copy">© 2026 Heartfelt International Ministries. All rights reserved.</p>
+</footer>
+<!-- Main JS File -->
+<script src="assets/js/main.js"></script>
+</body>
+</html>
