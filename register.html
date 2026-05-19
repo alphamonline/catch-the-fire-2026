@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register — Catch The Fire 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Raleway:wght@300;400;500;600;700;800&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link href="assets/css/main.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-brand" href="index.html">
+    <span class="nav-brand-main">Catch The Fire 2026</span>
+    <span class="nav-brand-sub">Heartfelt International Ministries</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#theme">Theme</a></li>
+    <li><a href="index.html#message">The Call</a></li>
+    <li><a href="index.html#venue">Venue</a></li>
+  </ul>
+</nav>
+
+<!-- STEPPER -->
+<div class="stepper-wrap">
+  <div class="stepper" id="stepper">
+    <div class="step active" data-step="1">
+      <div class="step-num">1</div>
+      <span class="step-label active">Personal</span>
+    </div>
+    <div class="step" data-step="2">
+      <div class="step-num">2</div>
+      <span class="step-label">Church &amp; Location</span>
+    </div>
+    <div class="step" data-step="3">
+      <div class="step-num">3</div>
+      <span class="step-label">Logistics</span>
+    </div>
+    <div class="step" data-step="4">
+      <div class="step-num">4</div>
+      <span class="step-label">Confirm</span>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN BODY -->
+<div class="reg-body" id="reg-body">
+
+  <!-- ════ LEFT: FORM ════ -->
+  <div id="form-area">
+
+    <!-- ── PANEL 1: PERSONAL INFO ── -->
+    <div class="form-panel active" id="panel-1">
+      <div class="panel-head">
+        <div class="kicker">Step 1 of 4</div>
+        <h2>Personal Information</h2>
+        <div class="rule"></div>
+        <p>Please fill in your details as they should appear on your conference record.</p>
+      </div>
+      <div class="form-card">
+        <div class="field-row">
+          <div class="field-group">
+            <label>First Name <span class="req">*</span></label>
+            <input type="text" id="first-name" placeholder="your name" required>
+          </div>
+          <div class="field-group">
+            <label>Last Name <span class="req">*</span></label>
+            <input type="text" id="last-name" placeholder="your last name" required>
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field-group">
+            <label>Email Address <span class="req">*</span></label>
+            <input type="email" id="email" placeholder="you@example.com" required>
+          </div>
+          <div class="field-group">
+            <label>Phone / WhatsApp <span class="req">*</span></label>
+            <input type="tel" id="phone" placeholder="+263 7XX XXX XXX" required>
+          </div>
+        </div>
+        <div class="field-row trio">
+          <div class="field-group">
+            <label>Date of Birth</label>
+            <input type="date" id="dob">
+          </div>
+          <div class="field-group">
+            <label>Gender <span class="req">*</span></label>
+            <div class="select-wrap">
+              <select id="gender" required>
+                <option value="" disabled selected>Select</option>
+                <option>Male</option>
+                <option>Female</option>
+              </select>
+            </div>
+          </div>
+          <div class="field-group">
+            <label>ID / Passport No.</label>
+            <input type="text" id="id-number" placeholder="Optional">
+          </div>
+        </div>
+
+        <div class="form-section-title">Attending As</div>
+        <div class="option-group inline" id="attend-type">
+          <label class="opt-item selected">
+            <input type="radio" name="attend-type" value="individual" checked>
+            <div class="opt-box"></div>
+            Individual
+          </label>
+          <label class="opt-item">
+            <input type="radio" name="attend-type" value="family">
+            <div class="opt-box"></div>
+            Family
+          </label>
+          <label class="opt-item">
+            <input type="radio" name="attend-type" value="group">
+            <div class="opt-box"></div>
+            Group / Delegation
+          </label>
+        </div>
+
+        <div id="group-count-row" class="field-row full" style="display:none; margin-top:1.5rem;">
+          <div class="field-group">
+            <label>Number of People in Group <span class="req">*</span></label>
+            <input type="number" id="group-count" min="2" max="200" placeholder="e.g. 15">
+            <span class="field-hint">Including yourself. Each member must also register individually.</span>
+          </div>
+        </div>
+
+        <div class="form-nav">
+          <span></span>
+          <button class="btn-next" onclick="goTo(2)">Next: Church &amp; Location →</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── PANEL 2: CHURCH & LOCATION ── -->
+    <div class="form-panel" id="panel-2">
+      <div class="panel-head">
+        <div class="kicker">Step 2 of 4</div>
+        <h2>Church &amp; Location</h2>
+        <div class="rule"></div>
+        <p>Help us know where you are coming from and who you worship with.</p>
+      </div>
+      <div class="form-card">
+        <div class="form-section-title">Your Location</div>
+        <div class="field-row">
+          <div class="field-group">
+            <label>Country <span class="req">*</span></label>
+            <div class="select-wrap">
+              <select id="country" required>
+                <option value="" disabled selected>Select country</option>
+                <option selected>Zimbabwe</option>
+                <option>South Africa</option>
+                <option>Zambia</option>
+                <option>Botswana</option>
+                <option>Mozambique</option>
+                <option>Malawi</option>
+                <option>Namibia</option>
+                <option>Tanzania</option>
+                <option>Kenya</option>
+                <option>United Kingdom</option>
+                <option>United States</option>
+                <option>Canada</option>
+                <option>Australia</option>
+                <option>UAE</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="field-group">
+            <label>Province / State <span class="req">*</span></label>
+            <div class="select-wrap">
+              <select id="province" required>
+                <option value="" disabled selected>Select province</option>
+                <option>Harare</option>
+                <option>Bulawayo</option>
+                <option>Mashonaland Central</option>
+                <option>Mashonaland East</option>
+                <option>Mashonaland West</option>
+                <option>Matabeleland North</option>
+                <option>Matabeleland South</option>
+                <option>Midlands</option>
+                <option>Masvingo</option>
+                <option>Manicaland</option>
+                <option>Outside Zimbabwe</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field-group">
+            <label>City / Town <span class="req">*</span></label>
+            <input type="text" id="city" placeholder="e.g. Harare" required>
+          </div>
+          <div class="field-group">
+            <label>Suburb / Area</label>
+            <input type="text" id="suburb" placeholder="Optional">
+          </div>
+        </div>
+
+        <div class="form-section-title">Church / Ministry</div>
+        <div class="field-row">
+          <div class="field-group">
+            <label>Church / Ministry Name <span class="req">*</span></label>
+            <input type="text" id="church" placeholder="e.g. Heartfelt International Ministries" required>
+          </div>
+          <div class="field-group">
+            <label>Branch / City</label>
+            <input type="text" id="church-branch" placeholder="e.g. Harare IOC Zone">
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field-group">
+            <label>Your Role in the Church</label>
+            <div class="select-wrap">
+              <select id="church-role">
+                <option value="" disabled selected>Select role</option>
+                <option>Member</option>
+                <option>Cell Leader / Life Group Leader</option>
+                <option>Deacon / Deaconess</option>
+                <option>Elder</option>
+                <option>Pastor</option>
+                <option>Bishop / Apostle</option>
+                <option>Evangelist</option>
+                <option>Prophet / Prophetess</option>
+                <option>Worship Team</option>
+                <option>Youth Leader</option>
+                <option>Children's Ministry</option>
+                <option>Not Yet a Member</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="field-group">
+            <label>How Did You Hear About CTF 2026?</label>
+            <div class="select-wrap">
+              <select id="hear-about">
+                <option value="" disabled selected>Select</option>
+                <option>Church Announcement</option>
+                <option>WhatsApp / Social Media</option>
+                <option>Pastor / Leader</option>
+                <option>Friend or Family</option>
+                <option>Website</option>
+                <option>Flyer / Poster</option>
+                <option>Previous Attendee</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-nav">
+          <button class="btn-back" onclick="goTo(1)">← Back</button>
+          <button class="btn-next" onclick="goTo(3)">Next: Logistics →</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── PANEL 3: LOGISTICS ── -->
+    <div class="form-panel" id="panel-3">
+      <div class="panel-head">
+        <div class="kicker">Step 3 of 4</div>
+        <h2>Conference Logistics</h2>
+        <div class="rule"></div>
+        <p>Let us know your needs for transport and accommodation so we can prepare accordingly.</p>
+      </div>
+      <div class="form-card">
+        <div class="form-section-title">Accommodation</div>
+        <div class="field-group" style="margin-bottom:1.5rem;">
+          <label>Do you require on-site accommodation? <span class="req">*</span></label>
+        </div>
+        <div class="option-group inline" id="accom-type">
+          <label class="opt-item selected">
+            <input type="radio" name="accom" value="none" checked>
+            <div class="opt-box"></div>
+            <div>
+              No — Attending Daily
+              <span class="opt-label-sub">You'll commute each day</span>
+            </div>
+          </label>
+          <label class="opt-item">
+            <input type="radio" name="accom" value="tent">
+            <div class="opt-box"></div>
+            <div>
+              Yes — Own Tent
+              <span class="opt-label-sub">Bring your own camping setup</span>
+            </div>
+          </label>
+          <label class="opt-item">
+            <input type="radio" name="accom" value="provided">
+            <div class="opt-box"></div>
+            <div>
+              Yes — Provided
+              <span class="opt-label-sub">On-site shared accommodation</span>
+            </div>
+          </label>
+        </div>
+
+        <div class="form-section-title" style="margin-top:2rem;">Transport</div>
+        <div class="field-group" style="margin-bottom:1.5rem;">
+          <label>Do you need transport assistance? <span class="req">*</span></label>
+        </div>
+        <div class="option-group inline" id="transport-type">
+          <label class="opt-item selected">
+            <input type="radio" name="transport" value="own" checked>
+            <div class="opt-box"></div>
+            <div>
+              Own Transport
+              <span class="opt-label-sub">I'll arrange my own travel</span>
+            </div>
+          </label>
+          <label class="opt-item">
+            <input type="radio" name="transport" value="needed">
+            <div class="opt-box"></div>
+            <div>
+              Transport Needed
+              <span class="opt-label-sub">Please include me in arrangements</span>
+            </div>
+          </label>
+        </div>
+
+        <div id="transport-detail" style="display:none; margin-top:1.5rem;">
+          <div class="field-row">
+            <div class="field-group">
+              <label>Travelling From <span class="req">*</span></label>
+              <input type="text" id="travel-from" placeholder="e.g. Harare CBD">
+            </div>
+            <div class="field-group">
+              <label>Number Needing Transport</label>
+              <input type="number" id="travel-count" min="1" max="50" placeholder="e.g. 2">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-section-title" style="margin-top:2rem;">Special Needs &amp; Notes</div>
+        <div class="field-row full">
+          <div class="field-group">
+            <label>Dietary Requirements or Medical Needs</label>
+            <input type="text" id="dietary" placeholder="e.g. Vegetarian, diabetic, uses wheelchair — leave blank if none">
+          </div>
+        </div>
+        <div class="field-row full">
+          <div class="field-group">
+            <label>Emergency Contact Name &amp; Number</label>
+            <input type="text" id="emergency" placeholder="Name and phone number of someone to contact if needed">
+          </div>
+        </div>
+        <div class="field-row full">
+          <div class="field-group">
+            <label>Any Other Information / Requests</label>
+            <textarea id="notes" placeholder="Anything else the organising team should know…"></textarea>
+          </div>
+        </div>
+
+        <div class="form-nav">
+          <button class="btn-back" onclick="goTo(2)">← Back</button>
+          <button class="btn-next" onclick="goTo(4)">Next: Review &amp; Confirm →</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── PANEL 4: REVIEW & CONFIRM ── -->
+    <div class="form-panel" id="panel-4">
+      <div class="panel-head">
+        <div class="kicker">Step 4 of 4</div>
+        <h2>Review &amp; Confirm</h2>
+        <div class="rule"></div>
+        <p>Please review your details before submitting. You will receive a WhatsApp/email confirmation after submission.</p>
+      </div>
+      <div class="form-card" id="review-card">
+        <!-- Populated by JS -->
+        <div class="form-section-title">Personal</div>
+        <div id="rev-personal"></div>
+        <div class="form-section-title" style="margin-top:1.8rem;">Church &amp; Location</div>
+        <div id="rev-church"></div>
+        <div class="form-section-title" style="margin-top:1.8rem;">Logistics</div>
+        <div id="rev-logistics"></div>
+
+        <div style="margin-top:2rem; padding: 1.2rem; background: var(--off-white); border: 1px solid var(--light-gray); border-left: 4px solid var(--gold);">
+          <label class="opt-item" id="consent-wrap" style="background: transparent; border: none; padding: 0; gap: 12px;">
+            <input type="checkbox" id="consent">
+            <div class="opt-box sq"></div>
+            <span style="font-size:0.85rem; color:var(--text-mid); line-height:1.6;">
+              I confirm that the information I have provided is accurate, and I consent to Heartfelt International Ministries using these details for conference administration and communication.
+            </span>
+          </label>
+        </div>
+
+        <div class="form-nav">
+          <button class="btn-back" onclick="goTo(3)">← Back</button>
+          <button class="btn-submit" id="submit-btn" onclick="submitForm()">🔥 Complete Registration</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── SUCCESS + TICKET ── -->
+    <div class="success-panel" id="success-panel">
+      <div class="ticket-wrap">
+        <h2>Heavenly <em>Realities!</em></h2>
+        <h3>You're <em>Registered!</em></h3>
+        <p>Heaven is leaning in. Your place at Catch The Fire 2026 is confirmed. Present this ticket at the entrance.</p>
+
+        <!-- TICKET -->
+        <div class="ticket" id="ticket-card">
+
+          <div class="ticket-header">
+            <span class="ticket-event">Heartfelt International Ministries</span>
+            <span class="ticket-title">Catch The Fire 2026</span>
+            <span class="ticket-subtitle">Heavenly Realities · 24–30 August · Richland City</span>
+          </div>
+
+          <div class="ticket-tear">
+            <div class="ticket-tear-circle"></div>
+            <div class="ticket-tear-line"></div>
+            <div class="ticket-tear-circle"></div>
+          </div>
+
+          <div class="ticket-body">
+            <div class="ticket-instruction">Present this ticket at the entrance</div>
+
+            <div class="ticket-qr-area">
+              <div id="qr-code"></div>
+            </div>
+
+            <div class="ticket-id" id="ticket-id-display">ID: CTF2026-0000</div>
+
+            <div class="ticket-details">
+              <div class="ticket-row">
+                <span class="ticket-key">Name</span>
+                <span class="ticket-val" id="t-name">—</span>
+              </div>
+              <div class="ticket-row">
+                <span class="ticket-key">Church</span>
+                <span class="ticket-val" id="t-church">—</span>
+              </div>
+              <div class="ticket-row">
+                <span class="ticket-key">Country</span>
+                <span class="ticket-val" id="t-country">—</span>
+              </div>
+              <div class="ticket-row">
+                <span class="ticket-key">Type</span>
+                <span class="ticket-val" id="t-type">—</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="ticket-footer">
+            <span class="tf-left">Richland City, Mhondoro</span>
+            <span class="tf-right">🔥 CTF 2026</span>
+          </div>
+        </div>
+        <!-- END TICKET -->
+
+        <div class="ticket-actions">
+          <button class="btn-share" id="btn-share" onclick="shareTicket()">⬆ Share Ticket</button>
+          <button class="btn-download" onclick="downloadTicket()">⬇ Download / Print Ticket</button>
+          <a class="btn-home" href="index.html">← Back to Main Site</a>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end form-area -->
+
+  <!-- ════ RIGHT: SIDEBAR ════ -->
+  <aside class="reg-sidebar" id="sidebar">
+    <div class="sidebar-card">
+      <div class="sc-head">Conference Details</div>
+      <div class="sc-title">Catch The Fire 2026</div>
+      <span class="sc-sub">Heavenly Realities</span>
+      <div class="sc-rule"></div>
+      <ul class="sc-items">
+        <li><span class="sc-ico">📅</span><div><span class="sc-k">Dates</span><span class="sc-v">24 – 30 August 2026</span></div></li>
+        <li><span class="sc-ico">📍</span><div><span class="sc-k">Venue</span><span class="sc-v">Richland City, Mhondoro, Zimbabwe</span></div></li>
+        <li><span class="sc-ico">🏛️</span><div><span class="sc-k">Hosted By</span><span class="sc-v">Heartfelt International Ministries</span></div></li>
+        <li><span class="sc-ico">👤</span><div><span class="sc-k">Speakers</span><span class="sc-v">Apostle T. & Pastor C. Vutabwashe</span></div></li>
+        <li><span class="sc-ico">🏕️</span><div><span class="sc-k">Accommodation</span><span class="sc-v">On-site accommodation available for all attendees</span></div></li>
+        <li><span class="sc-ico">🚌</span><div><span class="sc-k">Transport</span><span class="sc-v">Arrangements from major cities — details TBA</span></div></li>
+      </ul>
+      <div class="sc-notice">
+        <p><strong>$XX Registration Fee.</strong> All are welcome. Bring your fire and come expecting a divine encounter.</p>
+      </div>
+    </div>
+  </aside>
+
+</div><!-- end reg-body -->
+
+<footer>
+  <span class="ft-logo">Catch The Fire 2026</span>
+  <span class="ft-min">Heartfelt International Ministries · Mhondoro, Zimbabwe</span>
+  <div class="ft-rule"></div>
+  <p class="ft-copy">© 2026 Heartfelt International Ministries. All rights reserved.</p>
+</footer>
+
+<a class="wa-float" href="https://wa.me/263XXXXXXXXX" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="28" height="28">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+    <path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.107 1.514 5.842L.057 23.428a.75.75 0 0 0 .915.915l5.585-1.457A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.726 9.726 0 0 1-4.951-1.355l-.355-.211-3.317.866.88-3.22-.231-.372A9.718 9.718 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/>
+  </svg>
+</a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="assets/js/register.js"></script>
+</body>
+</html>
