@@ -8,7 +8,7 @@ function tick() {
 }
 tick(); setInterval(tick, 1000);
 
-/* =================== SCHEDULE TABS =================== */
+/* SCHEDULE TABS */
 document.getElementById('tabs').addEventListener('click', e => {
   const tab = e.target.closest('.sd'); if (!tab) return;
   const i = tab.dataset.i;
@@ -18,13 +18,13 @@ document.getElementById('tabs').addEventListener('click', e => {
   document.querySelector(`.sched-panel[data-p="${i}"]`).classList.add('on');
 });
 
-/* =================== SCROLL REVEAL =================== */
+/* SCROLL REVEAL */
 const obs = new IntersectionObserver(entries => {
   entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('shown'); });
 }, { threshold: 0.12 });
 document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 
-/* =================== EMBER PARTICLES =================== */
+/* EMBER PARTICLES */
 (function() {
   const wrap = document.getElementById('embers-wrap');
   const MAX = 60;

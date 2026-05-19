@@ -97,7 +97,7 @@ nav {
   padding: 7px 20px; margin-bottom: 2rem;
 }
 .hero-badge::before, .hero-badge::after { content: ''; display: block; width: 16px; height: 1px; background: rgba(255,255,255,0.4); }
-.hero-tagline { font-size: 11px; font-weight: 600; letter-spacing: 0.45em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.2rem; display: block; }
+.hero-tagline { font-size: 11px; font-weight: 600; letter-spacing: 0.45em; text-transform: uppercase; color: var(--crimson-hi); margin-bottom: 1.2rem; display: block; }
 .hero-title { font-family: 'Playfair Display', serif; font-size: clamp(3.5rem, 9vw, 7.5rem); font-weight: 900; line-height: 0.9; color: #fff; margin-bottom: 0.3em; letter-spacing: -0.02em; }
 .hero-title em { display: block; font-style: italic; color: var(--gold); font-size: 0.48em; letter-spacing: 0.1em; font-weight: 700; margin-bottom: 0.2em; text-shadow: 0 0 30px rgba(201,160,52,0.6), 0 0 60px rgba(255,120,0,0.3); animation: glow-pulse 3s ease-in-out infinite; }
 @keyframes glow-pulse {
@@ -371,51 +371,6 @@ footer { background: var(--navy); border-top: 3px solid var(--crimson); padding:
   .reg-meta { gap: 1.5rem; }
   .poster-image-wrap { order: -1; }
 }
-
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-:root {
-  --navy:       #0d1a35;
-  --navy-mid:   #122040;
-  --navy-light: #1a2d54;
-  --crimson:    #8b1c1c;
-  --crimson-hi: #a82424;
-  --crimson-dim:#5a1010;
-  --gold:       #c9a034;
-  --gold-light: #e0b84a;
-  --gold-dim:   #876a1f;
-  --white:      #ffffff;
-  --off-white:  #f7f4ef;
-  --light-gray: #eeeae3;
-  --text-dark:  #1a1a2e;
-  --text-mid:   #4a4a6a;
-  --text-muted: #8a8aaa;
-  --bl: rgba(0,0,0,0.1);
-  --bn: rgba(255,255,255,0.1);
-  --bg: rgba(201,160,52,0.3);
-}
-html { scroll-behavior: smooth; }
-body {
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-  color: var(--text-dark);
-  background: var(--off-white);
-  overflow-x: hidden;
-}
-
-/* ── NAV (same as main site) ── */
-nav {
-  position: fixed; top: 0; left: 0; right: 0; z-index: 200;
-  background: var(--navy); border-bottom: 2px solid var(--crimson);
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 0 5%; height: 68px;
-  box-shadow: 0 2px 20px rgba(0,0,0,0.4);
-}
-.nav-brand { display: flex; flex-direction: column; text-decoration: none; }
-.nav-brand-main { font-weight: 800; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); line-height: 1.1; }
-.nav-brand-sub  { font-size: 9px; font-weight: 400; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.45); }
-.nav-links { display: flex; gap: 1.8rem; list-style: none; }
-.nav-links a { font-size: 11px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.7); text-decoration: none; transition: color .25s; padding-bottom: 2px; border-bottom: 1px solid transparent; }
-.nav-links a:hover, .nav-links a.active { color: var(--gold); border-bottom-color: var(--gold); }
 
 /* ── PROGRESS STEPPER ── */
 .stepper-wrap {
@@ -739,13 +694,6 @@ nav {
 .btn-home:hover { color: var(--navy); }
 
 @keyframes bounce { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
-
-/* ── FOOTER ── */
-footer { background: var(--navy); border-top: 3px solid var(--crimson); padding: 3rem 5%; text-align: center; }
-.ft-logo { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: var(--gold); display: block; margin-bottom: 0.4rem; }
-.ft-min  { font-size: 9px; font-weight: 700; letter-spacing: 0.3em; text-transform: uppercase; color: rgba(255,255,255,0.35); display: block; margin-bottom: 1.5rem; }
-.ft-rule { height: 1px; background: rgba(255,255,255,0.07); margin-bottom: 1.5rem; }
-.ft-copy { font-size: 0.78rem; color: rgba(255,255,255,0.25); }
 
 /* ── RESPONSIVE ── */
 @media (max-width: 860px) {
